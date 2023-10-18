@@ -35,7 +35,17 @@ const Header = () => {
         </div>
       </div>
 
-      
+      <div className="header-navbar">
+
+        <ul className="navbar-links">
+          <li className="navbar-link"> Home</li>
+          <li className="navbar-link">Authors</li>
+          <li className="navbar-link">About Us </li>
+          <li className="navbar-link">Contact Us </li>
+          <li className="navbar-link">Register </li>
+        </ul>
+        
+      </div>
     </div>
   );
 };

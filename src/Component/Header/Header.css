@@ -39,7 +39,8 @@
 }
 
 .middle-header-logo b {
-    font-size: 35px;
+    font-size: 27px;
+  
 }
 
 .middle-header-search {
@@ -69,5 +70,31 @@
 }
 
 .middle-header-icon i {
-    font-size: 35px;
+    font-size: 40px;
+}
+.header-navbar{
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 1px gray;
+    height: 30%;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+.header-navbar .navbar-links{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header-navbar .navbar-link{
+    padding: 0px 20px;
+    font-size: 20px;
+    color:gray;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-navbar .navbar-link:hover{
+    background-color: snow;
+    cursor: pointer;
 }
