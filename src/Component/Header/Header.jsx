@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="top-header">
+        <div className="nav-icon"> <i class="bi bi-list"></i></div>
         <div className="top-header-phone">
           <i className="bi bi-telephone-fill"></i>
           123-456-789 101
@@ -44,7 +45,7 @@ const Header = () => {
           <li className="navbar-link">Contact Us </li>
           <li className="navbar-link">Register </li>
         </ul>
-        
+
       </div>
     </div>
   );
