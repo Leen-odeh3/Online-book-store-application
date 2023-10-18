@@ -1,8 +1,12 @@
 import React from "react";
+import './Header.css'
 
 const Header = () => {
   return (
     <div className="header">
+
+        <div className="top-header">
+
       <div className="top-header-phone">
         <i className="bi bi-telephone-fill"></i>
         123-456-789 101
@@ -12,6 +16,12 @@ const Header = () => {
         <i class="bi bi-person-fill"></i>
         Login
       </div>
+       </div>
+
+       <div>
+         
+       </div>
+       
     </div>
   );
 };

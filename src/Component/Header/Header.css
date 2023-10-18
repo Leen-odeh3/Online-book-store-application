@@ -1,0 +1,21 @@
+.header {
+    height: 250px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--main-color);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    padding: 0px 30px;
+    font-size: 27px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.top-header-phone i,
+.top-header-login i {
+    margin-right: 5px;
+}
