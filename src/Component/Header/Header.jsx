@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import './Header.css'
 
 const Header = () => {
+    const [toggle,settoggle]=useState(false);
   return (
     <div className="header">
       <div className="top-header">
-        <div className="nav-icon"> <i class="bi bi-list"></i></div>
+        <div className="nav-icon" onClick={()=>{settoggle(!toggle)}}> <i class="bi bi-list"></i></div>
         <div className="top-header-phone">
           <i className="bi bi-telephone-fill"></i>
           123-456-789 101
@@ -36,7 +37,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="header-navbar">
+      <div className="header-navbar" style={{left: toggle&& "0"}}>
 
         <ul className="navbar-links">
           <li className="navbar-link"> Home</li>
