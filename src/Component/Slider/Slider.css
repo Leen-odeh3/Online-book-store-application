@@ -76,3 +76,18 @@ justify-content: center;
 .arrow-left{
    left: 16px;
 }
+
+@media (max-width:790px){
+
+    .slider-img img{
+        height:370px;
+    }
+    .slider-img{
+       margin:0px 20px;}
+       .slider-description p{
+       font-size: 20px;
+       }
+       .slider-description h1{
+        font-size: 30px;
+       }
+}
