@@ -1,0 +1,47 @@
+.footer-component{
+    margin-top: 20px;
+    width:100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--main-color);
+    
+}
+.desc-footer{
+    font-size: 24px;
+    color:var(--main-color);
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+}
+.social-icon {
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    justify-content: center;
+    margin: 0px 7px;
+   
+}
+.footer-icons i{
+font-size: 25px;
+margin: 0px 10px;
+cursor: pointer;
+}
+i.insta{
+    color:rgba(127, 10, 84, 0.758);
+}
+i.telegram{
+color:rgb(41, 130, 209)
+}
+i.facebook{
+color:rgb(57, 57, 236)
+}
+i.youtube{
+color:red;
+}

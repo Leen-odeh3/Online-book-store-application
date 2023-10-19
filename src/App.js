@@ -5,6 +5,7 @@ import Services from './Component/Services/Services';
 import Slider from './Component/Slider/Slider';
 import {books} from './data/books'
 import Headeing from ".././src/Component/Headeing/Headeing.jsx";
+import Footer from './Component/Footer/Footer';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
    <BookSlider item={books}/>
    <Headeing title="Most Wished for"/>
    <BookSlider item={books}/>
-
+<Footer/>
 
     </div>
   );
