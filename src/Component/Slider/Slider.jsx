@@ -2,12 +2,24 @@ import "./Slider.css";
 import book1 from "../../images/book1.png";
 import book2 from "../../images/book2.png";
 import book3 from "../../images/book3.png";
+import { useState } from "react";
 
 const Slider = () => {
+  const [index, setindex] = useState(0);
   return (
     <div className="slider-container">
-      <i class="bi bi-arrow-left arrow-left"></i>
-      <div className="slider-content">
+      {index !== 0 && (
+        <i
+          class="bi bi-arrow-left arrow-left"
+          onClick={() => {
+            setindex(index - 1);
+          }}
+        ></i>
+      )}
+      <div
+        className="slider-content"
+        style={{ transform: `translateX(${index * -100}vw)` }}
+      >
         <div className="slide first-slide">
           <div className="slider-img">
             <img src={book1} alt="img-1" />
@@ -37,7 +49,14 @@ const Slider = () => {
           </div>
         </div>
       </div>
-      <i class="bi bi-arrow-right arrow-right"></i>
+      {index !== 2 && (
+        <i
+          class="bi bi-arrow-right arrow-right"
+          onClick={() => {
+            setindex(index + 1);
+          }}
+        ></i>
+      )}
     </div>
   );
 };
