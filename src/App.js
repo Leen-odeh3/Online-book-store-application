@@ -1,5 +1,6 @@
 
 import Header from './Component/Header/Header';
+import Services from './Component/Services/Services';
 import Slider from './Component/Slider/Slider';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
    <Header/>
    <Slider/>
+   <Services/>
 
     </div>
   );

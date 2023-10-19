@@ -27,8 +27,9 @@ div.slide{
 }
 .slider-img img{
     width:100%;
-    height:500px;
+    height:470px;
     object-fit: contain;
+    margin-top: 20px;
 }
 .slider-description h1{
     text-transform: capitalize;
