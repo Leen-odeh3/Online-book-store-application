@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./BookSlider.css";
 import Rating from "./Rating";
-import Headeing from "../Headeing/Headeing";
 
 const BookSlider = ({ item  }) => {
   const [index, setindex] = useState(0);
   return (
     <>
-    <Headeing title="Best Seller"/>
+   
     <div className="books-container">
       {index <= item.length - 5 && (
         <i
