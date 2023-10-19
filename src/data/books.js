@@ -2,7 +2,7 @@ export const books = [
     {
         id:1,
         price: 10.50,
-        rating:5,
+        rating:2,
         title: "Atomic Habits:Proven Way To Build Good Habits",
         author: "James Clear",
         reviews: "69,548",
@@ -15,7 +15,7 @@ export const books = [
     {
         id:2,
         price: 14,
-        rating:5,
+        rating:3.5,
         title: "Confess",
         author: "Colleen Hoover",
         reviews: "3,980",
