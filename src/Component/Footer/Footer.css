@@ -62,7 +62,7 @@ color:red;
 }
 .footer-title{
     font-weight: 700;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(224, 224, 224);
     width:fit-content;
     margin-bottom: 10px;
     font-size: 20px;
@@ -73,10 +73,11 @@ color:red;
 .items-link ul li,.items-link-contact ul li{
     font-size: 18px;
     padding-top: 10px;
+    cursor: pointer;
 }
 .footer-aboutUs p{
     font-size: 20px;
-    color:rgb(212, 212, 212);
+    color:rgb(230, 230, 230);
 }
 .items-link-contact ul li{
     padding-top: 20px;
@@ -86,4 +87,26 @@ color:red;
    font-size: 23px;
 }
 
+@media (max-width:900px){
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .foooooter{
+        flex-direction: column;
+       
+    }
+    .foooooter .desc-footer{
+    margin-bottom: 15px;
+    }
+    .footer-links,.footer-info,.footer-aboutUs{
+        width:90%;
+        margin-top: 20px ;
+    }
+    .footer-title{
+        margin-bottom: 5px;
+    }
+    .items-link-contact ul li{
+        padding-top: 10px;
+    }
+}
 
