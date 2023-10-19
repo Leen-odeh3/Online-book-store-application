@@ -14,13 +14,13 @@ const Rating = ({ numbers, review }) => {
   }
 
   return (
-    <div style={{ color: "rgb(254,171,17)" }}>
+    <div style={{ color: "rgb(254,171,17)",margin:" 0px 5px",fontSize:"18px" }}>
       {stars}
 
       <span> {numbers} </span>
       <span style={{ color: "gray", fontWeight: "bold" }}>
-        {" "}
-        ({review} reviews)
+       
+        ({review}reviews)
       </span>
     </div>
   );
