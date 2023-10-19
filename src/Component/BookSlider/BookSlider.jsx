@@ -1,33 +1,49 @@
-import React from 'react'
-import './BookSlider.css'
+import React, { useState } from "react";
+import "./BookSlider.css";
 
-const BookSlider = ({item}) => {
+const BookSlider = ({ item }) => {
+  const [index, setindex] = useState(0);
   return (
-    <div className='books-container'>
-      <i class="bi bi-chevron-left"></i>
-
-      <div className='books-slider'> 
-      
-      {
-        item.map((e)=> 
-        <div className='books-content-info'>
-            <img src={`./books/${e.image}`} alt={e.title} className="book-slide-img"/>
-            <h3>{e.title}</h3>
-            <div className='rating-component'>Rating</div>
-            <div className='book-price'> {e.price} </div>
-            <div className='book-icons'> 
-            <i class="bi bi-eye-fill"></i>
-            <i class="bi bi-cart-plus"></i>
-
+    <div className="books-container">
+      {index <= item.length - 5 && (
+        <i
+          class="bi bi-chevron-left left-icon"
+          onClick={() => {
+            setindex(index + 1);
+          }}
+        ></i>
+      )}
+      <div className="books-slider">
+        {item.map((e) => (
+          <div
+            className="books-content-info"
+            style={{ transform: `translateX(${index * -340}px)` }}
+          >
+            <img
+              src={`./books/${e.image}`}
+              alt={e.title}
+              className="book-slide-img"
+            />
+            <h3 className="book-title">{e.title}</h3>
+            <div className="rating-component">Rating</div>
+            <div className="book-price"> {e.price}$ </div>
+            <div className="book-icons">
+              <i class="bi bi-eye-fill"></i>
+              <i class="bi bi-cart-plus"></i>
             </div>
-            
-             </div>)
-      }
-      
+          </div>
+        ))}
       </div>
-      <i class="bi bi-chevron-right"></i>
+      {index !== 0 && (
+        <i
+          class="bi bi-chevron-right right-icon"
+          onClick={() => {
+            setindex(index - 1);
+          }}
+        ></i>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default BookSlider
+export default BookSlider;
