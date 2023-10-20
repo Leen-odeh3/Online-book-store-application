@@ -4,7 +4,7 @@ import Rating from "../BookSlider/Rating";
 import {Link} from "react-router-dom"
 
 function Modal({ databooks, open }) {
-  const { title, image, author, price, rating, reviews, inStock } = databooks;
+  const { title, image, author, price, rating, reviews, inStock,id } = databooks;
 
   return (
     <div className="full-modal" >
@@ -48,7 +48,7 @@ function Modal({ databooks, open }) {
             </button>
           </div>
           <div className="top">
-<Link to="/book"> 
+<Link to={`/book/${id}`}> 
             <button className="details">
               
               See more detailes
