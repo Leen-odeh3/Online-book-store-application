@@ -6,7 +6,7 @@ function Modal({ databooks, open }) {
   const { title, image, author, price, rating, reviews, inStock } = databooks;
 
   return (
-    <div className="full-modal">
+    <div className="full-modal" >
       <div className="content-modal">
         <i
           class="bi bi-x-circle"

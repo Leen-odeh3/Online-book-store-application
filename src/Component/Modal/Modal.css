@@ -17,7 +17,7 @@
     border-radius: 10px;
     position: relative;
     height: 90%;
-    width: 80%;
+    width: 70%;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -37,14 +37,14 @@
 }
 
 .img-content {
-    width: 60%;
+    width: 50%;
     height: 100%;
     padding-left: 20px;
 }
 
 .img-content img {
     height: 100%;
-    width: 80%;
+    width: 100%;
 
 }
 
@@ -119,7 +119,7 @@ input {
     .img-content img {
         height: 90%;
         width: 100%;
-
+object-fit: contain;
     }
 
     h3 {
@@ -143,6 +143,9 @@ input {
 
     .info-book {
         padding-top: 0px;
+    }
+    .content-modal{
+        width: 90%;
     }
 
 }
