@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState,} from "react";
 import "./BookSlider.css";
 import Rating from "./Rating";
+import Modal from "../Modal/Modal";
 
 const BookSlider = ({ item  }) => {
+
   const [index, setindex] = useState(0);
+  const[open,setopen]=useState(false);
+  const[info,setinfo]=useState(null);
+
   return (
     <>
    
@@ -31,7 +36,10 @@ const BookSlider = ({ item  }) => {
             <Rating numbers={e.rating} className="book-rating" review={e.reviews}/>
             <div className="book-price"> {e.price}$ </div>
             <div className="book-icons">
-              <i class="bi bi-eye-fill"></i>
+              <i class="bi bi-eye-fill" 
+              onClick={()=>{setopen(true)
+              setinfo(e)
+            }}></i>
               <i class="bi bi-cart-plus"></i>
             </div>
           </div>
@@ -45,6 +53,7 @@ const BookSlider = ({ item  }) => {
           }}
         ></i>
       )}
+{open && info && <Modal databooks={info} open={setopen}/>}
     </div>
     </>
   );
