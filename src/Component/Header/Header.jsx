@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Header.css'
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [toggle,settoggle]=useState(false);
@@ -13,16 +14,19 @@ const Header = () => {
         </div>
         <div className="top-header-title">Welcome To Online Book Store </div>
         <div className="top-header-login">
+          <Link to="/login"> 
           <i class="bi bi-person-fill"></i>
-          Login
+         <b> Login</b> 
+          </Link>
         </div>
       </div>
 
       <div className="middle-header">
         <div className="middle-header-logo">
-          <b>Book</b>
+          <Link to="/"><b>Book</b>
           <i class="bi bi-book"></i>
-          <b>Store</b>
+          <b>Store</b> </Link>
+          
         </div>
         <div className="middle-header-search">
           <input
@@ -32,19 +36,19 @@ const Header = () => {
           />
           <i class="bi bi-search"></i>
         </div>
-        <div className="middle-header-icon">
-          <i class="bi bi-cart3"></i>
+        <div className="middle-header-icon" >
+          <Link to="/cart">  <i class="bi bi-cart3" style={{color:"white"}}></i> </Link>
         </div>
       </div>
 
       <div className="header-navbar" style={{left: toggle&& "0"}}>
 
         <ul className="navbar-links">
-          <li className="navbar-link"> Home</li>
-          <li className="navbar-link">Authors</li>
-          <li className="navbar-link">About Us </li>
-          <li className="navbar-link">Contact Us </li>
-          <li className="navbar-link">Register </li>
+          <Link to="/" className="navbar-link"> Home</Link>
+          <Link to="/authors" className="navbar-link">Authors</Link>
+          <Link to="/aboutUs" className="navbar-link">About Us</Link>
+          <Link to="/contactUs" className="navbar-link">Contact Us </Link>
+          <Link to="/register" className="navbar-link">Register </Link>
         </ul>
 
       </div>

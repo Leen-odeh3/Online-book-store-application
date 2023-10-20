@@ -8,6 +8,9 @@
 .nav-icon{
     display: none;
 }
+.top-header-login i ,.top-header-login b{
+    color:white;
+}
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -32,17 +35,15 @@
 
 }
 
-.middle-header-icon i {
-    font-size: 30px;
-}
-
 .middle-header-logo i {
     margin: 0px 5px;
     font-size: 30px;
+    color:white;
 }
 
 .middle-header-logo b {
     font-size: 27px;
+    color:white;
   
 }
 

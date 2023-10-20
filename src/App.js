@@ -6,9 +6,9 @@ import Author from "./Pages/Authors/Author";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Cart from '../src/Pages/Cart/Cart.jsx'
-import Login from '../src/Forms/Login';
-import Register from '../src/Forms/Register'
-import Book from '../src/Pages/Book'
+import Login from './Forms/Login/Login.jsx';
+import Register from './Forms/Register/Register.jsx'
+import Book from './Pages/Book/Book.jsx'
 
 
 function App() {

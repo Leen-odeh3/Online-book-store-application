@@ -50,7 +50,7 @@
 
 button.details {
     display: block;
-    color: var(--main-color);
+    color: var(--main-color) !important;
     background-color: var(--primary-color);
     border-radius: 10px;
     width: 220px;

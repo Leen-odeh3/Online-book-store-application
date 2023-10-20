@@ -1,6 +1,7 @@
 import React from "react";
 import "./Modal.css";
 import Rating from "../BookSlider/Rating";
+import {Link} from "react-router-dom"
 
 function Modal({ databooks, open }) {
   const { title, image, author, price, rating, reviews, inStock } = databooks;
@@ -47,7 +48,12 @@ function Modal({ databooks, open }) {
             </button>
           </div>
           <div className="top">
-            <button className="details">Seem more detailes</button>
+<Link to="/book"> 
+            <button className="details">
+              
+              See more detailes
+              
+              </button></Link>
           </div>
         </div>
       </div>
