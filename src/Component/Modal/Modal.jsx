@@ -19,11 +19,9 @@ function Modal({ databooks, open }) {
         </div>
         <div className="info-book">
           <div className="top">
-         
             <h3>{title}</h3>
           </div>
           <div className="top">
-        
             <b>status:</b>
             {inStock ? "in stock" : "not instock"}
           </div>
@@ -37,7 +35,6 @@ function Modal({ databooks, open }) {
           </div>
 
           <div className="top">
-            
             <b>
               Price : <span>{price} </span>
             </b>
@@ -50,7 +47,6 @@ function Modal({ databooks, open }) {
             </button>
           </div>
           <div className="top">
-         
             <button className="details">Seem more detailes</button>
           </div>
         </div>
