@@ -1,11 +1,15 @@
-import React from 'react'
-import './About.css'
+import "./About.css";
+
 const AboutUs = () => {
   return (
-    <div>
-      about
-    </div>
-  )
-}
+    <section className="about">
+      <h1>About Us</h1>
+      <p>We are an online book store</p>
+      <p>
+        <strong>Version: 1.0.0</strong>
+      </p>
+    </section>
+  );
+};
 
-export default AboutUs
+export default AboutUs;
