@@ -6,7 +6,7 @@ import BookStoreContext from '../../Context/bookStorContext.js'
 
 function Modal({ databooks, open }) {
   const { title, image, author, price, rating, reviews, inStock,id } = databooks;
-  const { cartInfo, removeFromCart, addToCart } = useContext(BookStoreContext);
+  const {addToCart } = useContext(BookStoreContext);
   const [qty, setQty] = useState(1);
 
 

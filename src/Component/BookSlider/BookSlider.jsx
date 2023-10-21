@@ -1,9 +1,12 @@
-import React, { useState,} from "react";
+import React, { useContext ,useState} from "react";
 import "./BookSlider.css";
 import Rating from "./Rating";
 import Modal from "../Modal/Modal";
+import BookStoreContext from '../../Context/bookStorContext.js'
+
 
 const BookSlider = ({ item  }) => {
+  const {addToCart } = useContext(BookStoreContext);
 
   const [index, setindex] = useState(0);
   const[open,setopen]=useState(false);
@@ -40,7 +43,7 @@ const BookSlider = ({ item  }) => {
               onClick={()=>{setopen(true)
               setinfo(e)
             }}></i>
-              <i class="bi bi-cart-plus"></i>
+              <i class="bi bi-cart-plus" onClick={() => addToCart(item, 1)}></i>
             </div>
           </div>
         ))}
