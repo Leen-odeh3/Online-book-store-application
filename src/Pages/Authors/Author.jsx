@@ -1,23 +1,38 @@
-import React from 'react'
-import './Authors.css'
-import {authors} from '../../data/authors'
+import { useState } from "react";
+import { authors } from "../../data/authors";
+import "./Authors.css";
 
-const Author = () => {
+const Authors = () => {
+  const [search, setSearch] = useState("");
+
+  //console.log(authors.filter(a => a.name.toLowerCase().includes(search)));
+
   return (
-    <div className='author-content'>
-      <div className='search-author'><input type="search" placeholder='search in authors' className='search-authors'/> </div>
-      <div className='authors-wrapper'> 
-        {authors.map((e) => {
-          return (
-            <div className='auther-item' key={e.id}>
-              <img src={e.image} alt={e.name}  />
-              <h4>{e.name}</h4>
-            </div>
-          );
-        })}
+    <section className="authors">
+      <div className="authors-search-wrapper">
+        <input
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          type="search"
+          placeholder="Search in authors"
+        />
       </div>
-    </div>
-  )
-}
+      <div className="authors-wrapper">
+        {authors
+          .filter(a => a.name.toLowerCase().includes(search))
+          .map((author) => (
+            <div key={author.id} className="author">
+              <img
+                src={author.image}
+                alt={author.name}
+                className="author-img"
+              />
+              <h2 className="author-name">{author.name}</h2>
+            </div>
+          ))}
+      </div>
+    </section>
+  );
+};
 
-export default Author;
+export default Authors;
