@@ -48,11 +48,11 @@ span{
     cursor: pointer;
 }
 .book-add-to-cart-btn:hover{
- background-color: rgb(135, 223, 135);
+ background-color: rgb(123, 166, 76);
  color: white;
 }
 
-.book-add-to-cart-btn i{
+.book-add-to-cart-btn i.bi-cart-plus{
     margin-right: 5px;
 }
 .book-description{
@@ -67,8 +67,8 @@ span{
 display: flex;
 justify-content: space-around;
 align-items: center;
-margin-bottom: 40px;
-margin-top: 20px;
+/* margin-bottom: 40px;
+margin-top: 20px; */
 }
 .book-icon{
     display: flex;
@@ -79,7 +79,7 @@ small{
     font-size: 20px;
     margin-top: 30px;
 }
-.book-icon i{
+.book-icon i.bi-file-earmark-break{
     color:teal;
     margin:5px 0px;
 }
