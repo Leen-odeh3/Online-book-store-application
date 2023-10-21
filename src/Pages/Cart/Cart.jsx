@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { cartInfo } from "./../../data/cart";
 import "./Cart.css";
+import { useContext } from "react";
+import BookStoreContext from "../../Context/bookStorContext";
 
 const Cart = () => {
   const [value, setvalue] = useState();
+  const { cartInfo, removeFromCart, addToCart } = useContext(BookStoreContext);
 
   return (
     <div className="cart-content">
