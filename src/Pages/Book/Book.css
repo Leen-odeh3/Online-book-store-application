@@ -24,7 +24,7 @@
 .book-title{
    font-weight: 700;
    font-size: 20px;
-   margin-bottom: 20px;
+   /* margin-bottom: 20px; */
    margin-top: 10px;
 }
 span{
@@ -64,12 +64,12 @@ span{
     font-weight: 600;
 }
 .book-icons {
-display: flex;
-justify-content: space-around;
-align-items: center;
-/* margin-bottom: 40px;
-margin-top: 20px; */
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 40px;
+    margin-top: 20px; */
+    }
 .book-icon{
     display: flex;
     flex-direction: column;

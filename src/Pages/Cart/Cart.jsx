@@ -24,7 +24,7 @@ const Cart = () => {
                 <div className="flex">
                   <div className="qun">
                     <button>
-                      <i class="bi bi-dash" onClick={()=>setvalue(prev=>prev+1)}></i>
+                      <i class="bi bi-dash"></i>
                     </button>
                     <b>{e.quantity} </b>
                     <button>
@@ -39,7 +39,26 @@ const Cart = () => {
           ))}
         </div>
       </div>
-      <div> order Summary</div>
+      <div className="order Summary"> 
+      
+      <div className="b-cart"><h1> Order Summary</h1></div>
+      <div className="b-cart"> <b> subtotal    </b>
+      <b style={{color:"#242424"}}>
+        ${cartInfo.reduce((cu ,acc)=> cu+ acc.price * acc.quantity,0)}
+      </b>
+       </div>
+      <div className="b-cart"> <b>Shipping cost  </b> <b>0</b> </div>
+      <div className="b-cart"> <b>Discount   </b>
+      <b>0</b>
+       </div>
+      <div className="b-cart"> <b>Total    </b> 
+      <b style={{color:"#242424"}}>
+        ${cartInfo.reduce((cu ,acc)=> cu+ acc.price * acc.quantity,0)}
+      </b>
+      
+      </div>
+      
+      </div>
     </div>
   );
 };
