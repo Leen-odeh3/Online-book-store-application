@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext ,useState} from "react";
 import "./Modal.css";
 import Rating from "../BookSlider/Rating";
 import {Link} from "react-router-dom"
+import BookStoreContext from '../../Context/bookStorContext.js'
 
 function Modal({ databooks, open }) {
   const { title, image, author, price, rating, reviews, inStock,id } = databooks;
+  const { cartInfo, removeFromCart, addToCart } = useContext(BookStoreContext);
+  const [qty, setQty] = useState(1);
+
 
   return (
     <div className="full-modal" >
@@ -41,8 +45,8 @@ function Modal({ databooks, open }) {
             </b>
           </div>
           <div className="top all-info">
-            <input type="number" min="1" max="100" className="input-order" />
-            <button className="add-to">
+            <input type="number" min="1" max="100" className="input-order"  onChange={e => setQty(e.target.value)} />
+            <button className="add-to"  onClick={() => addToCart(databooks,qty)}>
               <i class="bi bi-cart-plus"></i>
               Add to cart
             </button>
