@@ -43,7 +43,7 @@ const BookSlider = ({ item  }) => {
               onClick={()=>{setopen(true)
               setinfo(e)
             }}></i>
-              <i class="bi bi-cart-plus" onClick={() => addToCart(item, 1)}></i>
+              
             </div>
           </div>
         ))}
